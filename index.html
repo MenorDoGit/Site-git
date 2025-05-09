@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sintonia - Série Netflix</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página dedicada à série Sintonia da Netflix, que retrata a realidade da juventude nas periferias de São Paulo." />
+  <title>Sintonia - Série Netflix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sintonia</h1>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .content {
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #e50914;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #e50914;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    
+    @media (min-width: 601px) {
+      .container {
+        flex-direction: row;
+        gap: 20px;
+      }
+
+      .content {
+        flex: 1;
+      }
+
+      .banner {
+        width: 50%;
+        object-fit: cover;
+      }
+    }
+
+
+    @media (min-width: 1025px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .btn {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img class="banner" src="sintonia.jpg" alt="Stranger Things Netflix" />
+    <div class="content">
+      
+      <h1>Sintonia</h1>
+      <p>Sintonia retrata a vida na periferia de São Paulo, mostrando como jovens buscam um futuro melhor por meio do funk, da fé e do crime. A série destaca os dilemas da juventude marginalizada e faz uma crítica social realista, valorizando sua força e resiliência.</p>
+      <section id="video">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/qTU7whGVN1k"
+          title="Trailer Sintonia Netflix"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </section>
+      <section class="tabela-planos">
+        <h2>Compare os Planos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Plano</th>
+              <th>Preço</th>
+              <th>Qualidade</th>
+              <th>Telas simultâneas</th>
+              <th>Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Básico</td>
+              <td>R$ 18,90</td>
+              <td>SD</td>
+              <td>1</td>
+              <td>Não</td>
+            </tr>
+            <tr>
+              <td>Padrão</td>
+              <td>R$ 39,90</td>
+              <td>Full HD</td>
+              <td>2</td>
+              <td>Sim</td>
+            </tr>
+            <tr>
+              <td>Premium</td>
+              <td>R$ 55,90</td>
+              <td>4K + HDR</td>
+              <td>4</td>
+              <td>Sim</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</body>
+</html> 
+<section id="contato" style="max-width: 600px; margin: 40px auto; padding: 20px;">
+  <h2 style="text-align: center; color: #e50914; margin-bottom: 20px;">Entre em Contato com a Batcaverna</h2>
+  <form style="display: flex; flex-direction: column;">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe sua mensagem..." required></textarea>
+
+    <button type="submit" style="margin-top: 15px; padding: 12px; background-color: #e50914; border: none; font-weight: bold; cursor: pointer; color: #000;">Enviar</button>
+  </form>
+</section>
